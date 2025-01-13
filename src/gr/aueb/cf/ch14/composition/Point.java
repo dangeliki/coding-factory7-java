@@ -1,4 +1,4 @@
-package gr.aueb.cf.ch14;
+package gr.aueb.cf.ch14.composition;
 
 public class Point {
     private double x;
@@ -19,15 +19,8 @@ public class Point {
         this.x = x;
     }
 
-//    public String pointToString() {
-//        return "(" + x + ")";
-//    }
-
-    @Override
-    public String toString() {
-        return "Point{" +
-                "x=" + x +
-                '}';
+    public String pointToString() {
+        return "(" + x + ")";
     }
 
     public void movePlus10() {

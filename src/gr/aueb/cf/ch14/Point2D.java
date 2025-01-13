@@ -22,9 +22,18 @@ public class Point2D extends Point {
         this.y = y;
     }
 
+//    @Override
+//    public String pointToString() {
+//        return super.pointToString() + "(" + y + ")";
+//    }
+//
+
+
     @Override
-    public String pointToString() {
-        return super.pointToString() + "(" + y + ")";
+    public String toString() {
+        return "Point2D{" +
+                "y=" + y +
+                '}';
     }
 
     // Liskov substitution principle

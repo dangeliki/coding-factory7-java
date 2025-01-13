@@ -21,10 +21,18 @@ public class Point3D extends Point2D {
         this.z = z;
     }
 
+//    @Override
+//    public String pointToString() {
+//       // return super.pointToString() + "(" + z + ")";
+//        return "(" + getX() + ", " + getY() + ", " + z + ")";
+//    }
+
+
     @Override
-    public String pointToString() {
-       // return super.pointToString() + "(" + z + ")";
-        return "(" + getX() + ", " + getY() + ", " + z + ")";
+    public String toString() {
+        return "Point3D{" +
+                "z=" + z +
+                '}';
     }
 
     @Override

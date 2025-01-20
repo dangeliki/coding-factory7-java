@@ -1,3 +1,4 @@
+
 package gr.aueb.cf.ch16.interfaces;
 
 import gr.aueb.cf.ch16.interfaces.model.Customer;
@@ -30,7 +31,7 @@ public class CustomerDAOImpl implements ICustomerDAO {
     }
 
     @Override
-    public Customer[] getCustomerbyRegion(String region) {
+    public Customer[] getCustomersByRegion(String region) {
         return new Customer[0];
     }
 

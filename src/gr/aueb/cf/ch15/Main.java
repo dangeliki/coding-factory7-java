@@ -6,12 +6,18 @@ public class Main {
 //        Αριστερά είναι ο τύπος και δεξιά η υλοποίηση. Cat is a ISpeakable
         ISpeakable cat = new Cat("Maui");
         ISpeakable dog = new Dog("Thor");
+        GenericSpeakingSchool genericSpeakingSchool = new GenericSpeakingSchool(cat);
+        GenericSpeakingSchool genericSpeakingSchool1 = new GenericSpeakingSchool(dog);
 
-        cat.speak();
-        dog.speak();
+//        cat.speak();
+//        dog.speak();
+//
+//        doSpeak(cat);
+//        doSpeak(dog);
+//
+        genericSpeakingSchool.learnToSpeak();
+        genericSpeakingSchool1.learnToSpeak();
 
-        doSpeak(cat);
-        doSpeak(dog);
 
     }
 

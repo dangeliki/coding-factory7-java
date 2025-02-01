@@ -2,7 +2,7 @@ package gr.aueb.cf.ch16.default_static;
 
 public class CodingWelcome implements IWelcome{
 
-//    Hide
+//    Hide : Αποκρύπτεται απο την coding welcome η staticWelcome. Δημιουργούμε τη δική μας.
     public static void staticMethod() {
         System.out.println("static method from CodingWelcome hides Welcome");
     }

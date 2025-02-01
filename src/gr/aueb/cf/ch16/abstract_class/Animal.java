@@ -29,6 +29,7 @@ public abstract class Animal {
         this.name = name;
     }
 
+//    Αν ειναι abstract υποχρεωνει τις derived classes να υλοποιησουν την toString
     public abstract String toString();
 
     public abstract void speak();

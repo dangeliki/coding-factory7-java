@@ -3,6 +3,7 @@ package gr.aueb.cf.ch16.interfaces;
 import gr.aueb.cf.ch16.interfaces.model.Customer;
 
 //Dependency injection
+//Delegation / Composition and forwarding
 
 public class CustomerServiceImpl {
 
@@ -10,6 +11,7 @@ public class CustomerServiceImpl {
     private ICustomerDAO iCustomerDAO;
 
     public CustomerServiceImpl(ICustomerDAO iCustomerDAO){
+//        Ενα instance του DAO για να παρουμε τις υπηρεσιες
         this.iCustomerDAO = iCustomerDAO;
     }
 

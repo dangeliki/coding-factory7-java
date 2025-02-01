@@ -1,5 +1,7 @@
 package gr.aueb.cf.ch16.function;
 
+//Υλοποιει το interface , το κάνει implements
+
 public class AdditionCalculator implements ICalculator {
     @Override
     public int operate(int a, int b) {

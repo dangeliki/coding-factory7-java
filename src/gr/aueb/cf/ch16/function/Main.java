@@ -2,6 +2,7 @@ package gr.aueb.cf.ch16.function;
 
 public class Main {
     public static void main(String[] args) {
+//        αριστερά ο τυπος το interface και δεξια η υλοποιηση **ADDITION CALCULATOR IS A ICALCULATOR**
         ICalculator addition = new AdditionCalculator();
         int result = addition.operate(1,2);
         System.out.println(result);
@@ -18,8 +19,8 @@ public class Main {
         int result2 = sub.operate(10,6);
         System.out.println(result2);
 
-//        Lamda Interface
-//        Το mul ειναι instance που υλοποιει την ICalculator
+//        Lamda Expression
+//        Το mul ειναι instance μιας κλάσης που υλοποιει την ICalculator (functional interface)
 //        Ειναι ιδιο με την ανωνυμη κλαση αλλα πολυ πιο συντομο
 //        Το functional interface ειναι στην πραγματικοτητα ενα function
         ICalculator mul = (a,b) -> a * b ;

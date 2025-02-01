@@ -1,6 +1,11 @@
 package gr.aueb.cf.ch16.interfaces.model;
 
+/**
+ * Java Bean (Data Class)
+ */
 public class Customer {
+
+//    Private πεδία
     private Long id;
     private String vat;
     private String region;
@@ -9,6 +14,7 @@ public class Customer {
     private String firstname;
     private String phoneNumber;
 
+//    Constructors
     public Customer() {
 
     }
@@ -23,6 +29,7 @@ public class Customer {
         this.phoneNumber = phoneNumber;
     }
 
+//    Setters
     public void setId(Long id) {
         this.id = id;
     }
@@ -51,6 +58,7 @@ public class Customer {
         this.phoneNumber = phoneNumber;
     }
 
+//    Getters
     public Long getId() {
         return id;
     }

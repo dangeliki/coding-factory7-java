@@ -2,6 +2,9 @@ package gr.aueb.cf.ch16.interfaces;
 
 import gr.aueb.cf.ch16.interfaces.model.Customer;
 
+//Όταν μια κλάση κάνει implements ενα interface, θα πρέπει να ορίζει τις μεθόδους του interface(να τις γράψει στο σώμα του)
+
+
 public class CustomerDAOImpl implements ICustomerDAO {
 
     @Override

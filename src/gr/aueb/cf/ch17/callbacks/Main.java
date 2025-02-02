@@ -3,8 +3,8 @@ package gr.aueb.cf.ch17.callbacks;
 public class Main {
     public static void main(String[] args) {
 
-//        Δημιουργεί ένα instance μιας κλασης που ταυτοχρονα οριζεται κιολας
-//        Η ανωνυμη κλαση γινεται instatiate και ταυτοχρονα υλοποιει το interface
+//        Δημιουργεί ένα instance μιας κλάσης που ταυτόχρονα ορίζεται κιόλας
+//        Η ανώνυμη κλάση γίνεται instantiate και ταυτόχρονα υλοποιεί το interface
         doPrint(new Printable() {
             @Override
             public void print() {

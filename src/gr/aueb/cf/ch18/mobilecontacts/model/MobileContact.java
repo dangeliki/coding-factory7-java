@@ -43,10 +43,12 @@ public class MobileContact extends AbstractEntity {
 
     @Override
     public String toString() {
+//        Επειδη στην παρασταση υπαρχει εστω ενα string και υπαρχει ενα + , τοτε ολα τα υπολοιπα μετατρεπονται σε string
         return "Firstname: " + firstname + ", Lastname: " + lastname + ", Phone Number: " + phoneNumber;
     }
 
     @Override
+//    Η equals παιρνει ενα obj και το συγκρινει με το this
     public boolean equals(Object other) {
         if (this == other) return true;
 //        if (!(other instanceof MobileContact)) return false;
@@ -62,6 +64,9 @@ public class MobileContact extends AbstractEntity {
     }
 
     @Override
+//    Επιστρεφει εναν int που ειναι μοναδικος και εξαρταται απο το state του instance - μοναδικος αριθμος για καθε instance-
+//    Όταν δυο instances ειναι equals , παραγεται το ιδιο hashcode
+//    Οταν γινει override το equals, τοτε θα πρεπει να γινεται παντα override και το hashcode!!!!
     public int hashCode() {
         return Objects.hash(getFirstname(), getLastname(), getPhoneNumber());
     }

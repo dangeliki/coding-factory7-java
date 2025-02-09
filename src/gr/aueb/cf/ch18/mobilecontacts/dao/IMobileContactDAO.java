@@ -13,7 +13,7 @@ public interface IMobileContactDAO {
 
     void deleteByPhoneNumber(String phoneNumber);
 
-    MobileContact getByPhoneNumber(String phoneNumber);
+    MobileContact getByPhoneNumber(String phoneNumber);     //Query
     boolean userIdExists(Long id);
     boolean phoneNumberExists(String phoneNumber);
 }

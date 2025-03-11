@@ -37,4 +37,36 @@ public class SingleList <T> {
 
     }
 
+    /**
+     * Time complexity O(1)
+     * @return
+     */
+    public Node<T> removeFirst() {
+        if (head == null) return null;
+
+        Node<T> node = head;
+        head = head.getNext();
+        return node;
+    }
+
+    /**
+     * Time complexity O(n)
+     * @return the removed node.
+     */
+    public Node<T> removeLast() {
+        if(head == null || head.getNext() == null) {
+            return removeFirst();
+        }
+
+        Node<T> n;
+        for (n = head; n.getNext().getNext() != null; n = n.getNext()){
+
+        }
+
+        Node<T> nodeToReturn = n.getNext();
+        n.setNext(null);
+        return nodeToReturn;
+
+    }
+
 }

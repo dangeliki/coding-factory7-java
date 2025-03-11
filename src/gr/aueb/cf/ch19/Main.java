@@ -6,6 +6,7 @@ public class Main {
         NodeObj nodeObj = new NodeObj();
         nodeObj.setItem("Coding");
 
+//        ClassCastException
         int item = (int) nodeObj.getItem();
         System.out.println(item);
 

@@ -56,4 +56,11 @@ public class MainGen {
         }
     }
 
+//    Ο κανόνας του PECS
+    public static <T> void consumerProducer (List<? super T> consumer, List<? extends T> producer) {
+        for (T t : producer ) {
+            consumer.add(t);
+        }
+    }
+
 }

@@ -11,8 +11,30 @@ public class SingleList <T> {
         head = tmp;
     }
 
-//    Constructor
-    public SingleList() {
+    /**
+     * Time complexity O(n)
+     * @param t
+     *      the value to be inserted
+     */
+    public void insertLast(T t) {
+        Node<T> tmp = new Node<>();
+        tmp.setItem(t);
+        tmp.setNext(null);
+
+        if(head == null){
+            insertFirst(t);
+            return;
+        }
+
+        Node<T> n;
+
+        for (n = head; n.getNext() != null; n = n.getNext()) {
+
+        }
+
+        n.setNext(tmp);
+
 
     }
+
 }

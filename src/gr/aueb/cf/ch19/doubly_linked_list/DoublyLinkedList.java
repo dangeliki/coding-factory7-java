@@ -21,4 +21,19 @@ public class DoublyLinkedList<T> {
         head = tmp;
     }
 
+    public void insertLast(T t) {
+        if (head == null) {
+            insertFirst(t);
+            return;
+        }
+
+        Node<T> tmp = new Node<>();
+        tmp.setItem(t);
+        tmp.setNext(null);
+        tmp.setPrev(tail);
+
+        tail.setNext(tmp);
+        tail = tmp;
+    }
+
 }

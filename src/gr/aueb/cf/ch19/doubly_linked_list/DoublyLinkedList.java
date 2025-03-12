@@ -5,6 +5,10 @@ public class DoublyLinkedList<T> {
     private Node<T> head = null;
     private Node<T> tail = null;
 
+    /**
+     * Time complexity O(1)
+     * @param t
+     */
     public void insertFirst(T t) {
         Node<T> tmp = new Node<>();
         tmp.setItem(t);

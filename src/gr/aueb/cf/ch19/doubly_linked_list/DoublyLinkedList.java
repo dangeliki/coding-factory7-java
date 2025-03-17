@@ -81,6 +81,23 @@ public class DoublyLinkedList<T> {
         return nodeToReturn;
     }
 
+    /**
+     * Time complexity O(n)
+     */
+    public void traverse() {
+        for (Node<T> n = head ; n != null ; n.getNext()) {
+            System.out.println(n.getItem());
+        }
+    }
+
+    /**
+     * Time complexity O(n)
+     */
+    public void traverseReverse() {
+        for (Node<T> n = tail ; n != null ; n.getPrev()) {
+            System.out.println(n.getItem());
+        }
+    }
 
 
     public boolean isEmpty() {

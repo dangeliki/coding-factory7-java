@@ -73,7 +73,7 @@ public class DoublyLinkedList<T> {
         Node<T> nodeToReturn = null;
 
         for (Node<T> n = head; n != null ; n = n.getNext()) {
-            if (n.getNext().equals(t)){
+            if (n.getItem().equals(t)){
                 nodeToReturn = n;
                 break;
             }

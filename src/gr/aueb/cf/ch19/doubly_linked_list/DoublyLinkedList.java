@@ -48,6 +48,7 @@ public class DoublyLinkedList<T> {
         nodeToReturn = head;
         if (head.getNext() == null) tail = null;
         head = head.getNext();
+        head.setPrev(null);
         return nodeToReturn;
     }
 

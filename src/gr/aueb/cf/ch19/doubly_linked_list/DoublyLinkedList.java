@@ -36,4 +36,19 @@ public class DoublyLinkedList<T> {
         tail = tmp;
     }
 
+    public Node<T> removeFirst() {
+        Node<T> nodeToReturn;
+
+        if (head == null) return null;
+
+        nodeToReturn = head;
+        if (head.getNext() == null) tail = null;
+        head = head.getNext();
+        return nodeToReturn;
+    }
+
+    public boolean isEmpty() {
+        return head == null;
+    }
+
 }

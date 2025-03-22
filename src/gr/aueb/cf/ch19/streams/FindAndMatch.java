@@ -30,5 +30,10 @@ public class FindAndMatch {
                 .filter(name -> name.equals("Bob"))
                 .findFirst().orElseThrow(() -> new Exception("Alice not Exists"));
 
+//        Match
+        boolean isBobExists = names.stream().anyMatch(name -> name.equals("Bob"));
+        boolean allAreBob = names.stream().allMatch(name -> name.equals("Bob"));
+        boolean noneIsBob = names.stream().noneMatch(name -> name.equals("Bob"));
+
     }
 }

@@ -25,6 +25,7 @@ public class FindAndMatch {
                 .findFirst().orElse(null);
 
 //        Αν δεν βρει ονομα που να ειναι Bob , κανει throw exception
+//        Οταν το lambda δεν παιρνει παραμετρο, βαζω παρενθεσεις ()
         String strFirst2 = names.stream()
                 .filter(name -> name.equals("Bob"))
                 .findFirst().orElseThrow(() -> new Exception("Alice not Exists"));

@@ -23,7 +23,5 @@ public class ReduceMain {
 //        Parallel Streams
         int totalSum3 = numbers.parallelStream().reduce(0,Integer::sum,Integer::sum);
         int totalSum4 = numbers.parallelStream().reduce(0,Integer::sum);
-
-
     }
 }

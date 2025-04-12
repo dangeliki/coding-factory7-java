@@ -70,4 +70,8 @@ public class RegExMain {
         return s.matches(".[0-9]");
     }
 
+    public static boolean isEmail(String s){
+        return s.matches("\\w*\\.?\\w+@\\w+\\.[a-z]{2,4}");
+    }
+
 }

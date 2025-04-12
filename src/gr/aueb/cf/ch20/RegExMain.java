@@ -1,14 +1,18 @@
 package gr.aueb.cf.ch20;
 
+import org.w3c.dom.ls.LSOutput;
+
 public class RegExMain {
     public static void main(String[] args) {
 
-       String s = "sing";
+       String s = "!6";
         System.out.println(isRed(s));
         System.out.println(isRedOrGreen(s));
         System.out.println(isrRedOrgGreen(s));
         System.out.println(beginsWithOneUpperCaseAndEndsInIng(s));
         System.out.println(isOneLetterAndEndsInIng(s));
+        System.out.println(whitespaceDigit(s));
+        System.out.println(anySymbolDigit(s));
 
     }
 
@@ -55,6 +59,15 @@ public class RegExMain {
      */
     public static boolean isOneLetterAndEndsInIng(String s){
         return s.matches("[A-Za-z]ing");
+    }
+
+    public static boolean whitespaceDigit(String s){
+        return s.matches("\\s\\d");
+    }
+
+    public static boolean anySymbolDigit(String s){
+//        return s.matches(".\\d");
+        return s.matches(".[0-9]");
     }
 
 }

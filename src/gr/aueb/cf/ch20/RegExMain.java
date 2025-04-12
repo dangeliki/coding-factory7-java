@@ -3,10 +3,12 @@ package gr.aueb.cf.ch20;
 public class RegExMain {
     public static void main(String[] args) {
 
-       String s = "red";
+       String s = "sing";
         System.out.println(isRed(s));
         System.out.println(isRedOrGreen(s));
         System.out.println(isrRedOrgGreen(s));
+        System.out.println(beginsWithOneUpperCaseAndEndsInIng(s));
+        System.out.println(isOneLetterAndEndsInIng(s));
 
     }
 
@@ -35,6 +37,24 @@ public class RegExMain {
      */
     public static boolean isrRedOrgGreen(String s) {
         return s.matches("[rR]ed|[gG]reen");
+    }
+
+    /**
+     * Ελέγχει (matches) αν το input string ξεκινάει με upper case και ακολουθεί -ing
+     * @param s
+     * @return
+     */
+    public static boolean beginsWithOneUpperCaseAndEndsInIng(String s){
+        return s.matches("[A-Z]ing");
+    }
+
+    /**
+     * Ελέγχει (matches) αν το input string έχει ένα γράμμα και τελειώνει σε -ing
+     * @param s
+     * @return
+     */
+    public static boolean isOneLetterAndEndsInIng(String s){
+        return s.matches("[A-Za-z]ing");
     }
 
 }

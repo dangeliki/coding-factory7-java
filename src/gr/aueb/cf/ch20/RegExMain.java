@@ -6,6 +6,7 @@ public class RegExMain {
        String s = "red";
         System.out.println(isRed(s));
         System.out.println(isRedOrGreen(s));
+        System.out.println(isrRedOrgGreen(s));
 
     }
 
@@ -25,6 +26,15 @@ public class RegExMain {
      */
     public static boolean isRedOrGreen(String s){
         return s.matches("red|green");
+    }
+
+    /**
+     * Ελέγχει (matches) αν το input string είναι "red" ή "green" που ξεκινούν με πεζά ή κεφαλαία
+     * @param s
+     * @return
+     */
+    public static boolean isrRedOrgGreen(String s) {
+        return s.matches("[rR]ed|[gG]reen");
     }
 
 }

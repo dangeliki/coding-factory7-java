@@ -17,7 +17,7 @@ public class RegExMain {
 //        System.out.println(isDate(s));
         String[] tokens = doSplit(s);
         for(String token : tokens) {
-            System.out.println(token + " ");
+            System.out.println(token);
         }
 
     }

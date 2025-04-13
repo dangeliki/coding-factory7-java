@@ -5,7 +5,7 @@ import org.w3c.dom.ls.LSOutput;
 public class RegExMain {
     public static void main(String[] args) {
 
-       String s = "Athens Uni    of    Economics and business";
+       String s = "Hello World";
 //        System.out.println(isRed(s));
 //        System.out.println(isRedOrGreen(s));
 //        System.out.println(isrRedOrgGreen(s));
@@ -15,10 +15,16 @@ public class RegExMain {
 //        System.out.println(anySymbolDigit(s));
 //        System.out.println(isEmail(s));
 //        System.out.println(isDate(s));
-        String[] tokens = doSplit(s);
-        for(String token : tokens) {
-            System.out.println(token);
-        }
+
+////        Για την doSplit()
+//        String[] tokens = doSplit(s);
+//        for(String token : tokens) {
+//            System.out.println(token);
+//        }
+
+//        System.out.println(doReplace(s));
+
+        System.out.println(doReplaceBackReference(s));
 
     }
 
@@ -88,4 +94,12 @@ public class RegExMain {
         return s.split("\\s+");
     }
 
+    public static String doReplace(String s){
+        return s.replaceAll("\\s+","#");
+    }
+
+    public static String doReplaceBackReference(String s){
+//        Θα πρέπει να βάλουμε παρενθέσεις για να μπορεί να κάνει BACK REFERENCE
+        return s.replaceAll("(.+)\\s+(.+)","$2 $1");
+    }
 }

@@ -5,14 +5,20 @@ import org.w3c.dom.ls.LSOutput;
 public class RegExMain {
     public static void main(String[] args) {
 
-       String s = "!6";
-        System.out.println(isRed(s));
-        System.out.println(isRedOrGreen(s));
-        System.out.println(isrRedOrgGreen(s));
-        System.out.println(beginsWithOneUpperCaseAndEndsInIng(s));
-        System.out.println(isOneLetterAndEndsInIng(s));
-        System.out.println(whitespaceDigit(s));
-        System.out.println(anySymbolDigit(s));
+       String s = "Athens Uni    of    Economics and business";
+//        System.out.println(isRed(s));
+//        System.out.println(isRedOrGreen(s));
+//        System.out.println(isrRedOrgGreen(s));
+//        System.out.println(beginsWithOneUpperCaseAndEndsInIng(s));
+//        System.out.println(isOneLetterAndEndsInIng(s));
+//        System.out.println(whitespaceDigit(s));
+//        System.out.println(anySymbolDigit(s));
+//        System.out.println(isEmail(s));
+//        System.out.println(isDate(s));
+        String[] tokens = doSplit(s);
+        for(String token : tokens) {
+            System.out.println(token + " ");
+        }
 
     }
 
@@ -72,6 +78,14 @@ public class RegExMain {
 
     public static boolean isEmail(String s){
         return s.matches("\\w*\\.?\\w+@\\w+\\.[a-z]{2,4}");
+    }
+
+    public static boolean isDate(String s) {
+        return s.matches("\\d{2}/\\d{2}/\\d{4}");
+    }
+
+    public static String[] doSplit(String s){
+        return s.split("\\s+");
     }
 
 }

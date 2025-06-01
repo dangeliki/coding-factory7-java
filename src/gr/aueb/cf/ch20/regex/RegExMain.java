@@ -1,6 +1,4 @@
-package gr.aueb.cf.ch20;
-
-import org.w3c.dom.ls.LSOutput;
+package gr.aueb.cf.ch20.regex;
 
 public class RegExMain {
     public static void main(String[] args) {

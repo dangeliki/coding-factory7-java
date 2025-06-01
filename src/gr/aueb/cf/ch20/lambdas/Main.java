@@ -17,6 +17,16 @@ public class Main {
         List<Teacher> teachers1 = getFilteredTeachers(teachers, teacher -> teacher.getId() == 2);
         teachers1.forEach(System.out::println);
 
+//        Όταν εμφανίζεται δύο φορές το instance, μπορούμε να μετατρέψουμε σε method reference (που είναι πιο σύντομος τρόπος για τα lambdas)
+        printTeachers(teachers, teacher -> teacher.printInstanceTeacher());
+        printTeachers(teachers, Teacher::printInstanceTeacher);
+
+        printTeachers(teachers, teacher -> Teacher.printStaticTeacher(teacher));
+        printTeachers(teachers, Teacher::printStaticTeacher);
+
+        printTeachers(teachers,teacher -> System.out.println(teacher));
+        printTeachers(teachers, System.out::println);
+
     }
 
 //    public static List<Teacher> getFilteredTeachers(List<Teacher> teachers, ITeacherFilter filter){

@@ -49,6 +49,10 @@ public class Teacher {
         return ("id: " +id+ "\nFirstname: " +firstname+ "\nLastname: " +lastname);
     }
 
+    public void printInstanceTeacher() {
+        System.out.println("id: " +id+ "\nFirstname: " +firstname+ "\nLastname: " +lastname);
+    }
+
     public static void printStaticTeacher(Teacher teacher) {
         System.out.println("id: " +teacher.getId()+ "\nFirstname: " +teacher.getFirstname()+ "\nLastname: " +teacher.getLastname());
     }
